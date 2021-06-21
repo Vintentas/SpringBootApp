@@ -3,7 +3,6 @@ package ru.dhabits.spring_boot_example.Service;
 import com.sun.istack.NotNull;
 import ru.dhabits.spring_boot_example.model.request.CreateUserRequest;
 import ru.dhabits.spring_boot_example.model.response.UserResponse;
-import ru.dhabits.spring_boot_example.repository.UserRepository;
 
 import java.util.List;
 
