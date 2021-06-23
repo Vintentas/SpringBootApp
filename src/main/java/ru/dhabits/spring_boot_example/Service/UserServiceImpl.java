@@ -80,7 +80,7 @@ public class UserServiceImpl implements UserService {
                 .setAge(user.getAge())
                 .setFirstName(user.getFirstName())
                 .setMiddleName(user.getMiddleName())
-                .setLasName(user.getLasName())
+                .setLastName(user.getLastName())
                 .setAddress(new AddressResponse()
                         .setCity(user.getAddress().getCity())
                         .setBuilding(user.getAddress().getBuilding())
@@ -94,7 +94,7 @@ public class UserServiceImpl implements UserService {
                 .setAge(request.getAge())
                 .setFirstName(request.getFirstName())
                 .setMiddleName(request.getMiddleName())
-                .setLasName(request.getLasName())
+                .setLastName(request.getLastName())
                 .setAddress(new Address()
                         .setCity(request.getAddress().getCity())
                         .setBuilding(request.getAddress().getBuilding())
@@ -105,7 +105,7 @@ public class UserServiceImpl implements UserService {
         ofNullable(request.getLogin()).map(user::setLogin);
         ofNullable(request.getFirstName()).map(user::setFirstName);
         ofNullable(request.getMiddleName()).map(user::setMiddleName);
-        ofNullable(request.getLasName()).map(user::setLasName);
+        ofNullable(request.getLastName()).map(user::setLastName);
         ofNullable(request.getAge()).map(user::setAge);
 
         CreateAddressRequest addressRequest = request.getAddress();

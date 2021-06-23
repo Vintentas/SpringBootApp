@@ -27,8 +27,8 @@ public class User {
     @Column(name = "middleName")
     private String middleName;
 
-    @Column(name = "lasName")
-    private String lasName;
+    @Column(name = "lastName")
+    private String lastName;
 
     @Column(name = "age")
     private Integer age;
@@ -57,7 +57,7 @@ public class User {
                 ", login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", middleName='" + middleName + '\'' +
-                ", lasName='" + lasName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", age=" + age +
                 '}';
     }
